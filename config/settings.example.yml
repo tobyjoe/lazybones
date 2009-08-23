@@ -1,0 +1,16 @@
+defaults: &defaults
+ 
+:development:
+  :couchdb:
+    :url: http://localhost:5984/APP_NAME_development
+  <<: *defaults
+  
+:test:
+  :couchdb:
+    :url: http://localhost:5984/APP_NAME_test
+    <<: *defaults
+
+:production:
+  :couchdb:
+    :url: http://localhost:5984/APP_NAME_production
+    <<: *defaults
