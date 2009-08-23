@@ -17,7 +17,6 @@ class Monk < Thor
   desc "start ENV", "Start Monk in the supplied environment"
   def start(env = ENV["RACK_ENV"] || "development")
     verify "config/settings.example.yml"
-    verify "config/redis/#{env}.example.conf"
     exec "env RACK_ENV=#{env} ruby init.rb"
   end
 
