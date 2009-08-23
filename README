@@ -4,12 +4,11 @@ Lazybones = (Monk) skeleton on Couch(db). Or something. Gimme a break.
 
 Unlike the main monk skeleton, I didn't commit the contents of the vendor directory.
 
-Instead, after you check out the skeleton, be sure to use the <code>dep</code> tool to build them.
+Instead, after you check out the skeleton, be sure to use the dep tool to build them.
 
-<code>
+
 dep vendor --all
 
-</code>
 
 Also, open config/settings.yml and change the CouchDB database name(s) to reflect your set-up.
 
